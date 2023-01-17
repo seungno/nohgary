@@ -288,21 +288,7 @@ def TO_GPU (name = "", folder = ""):
                 cmds.parent(test_name,selobj, absolute=0)
 
 
-    # selShapes = cmds.ls(assemblies=True, v=1)
-    # group_name = []
-    # temp_group_name = []
-    # for i in selShapes:
-    #     a=i.rsplit("_",1)[0]
-        
-    #     temp_group_name.append(a)
-    # group_name = set(temp_group_name)       
-
-    # for name in group_name:
-    #     create_grp= cmds.group(n="{0}_grp".format(name),em=1)
-    #     for j in selShapes:
-    #         if name in j:
-    #             cmds.parent(j, create_grp)
-    
+  
     return ResultDict
 
             
